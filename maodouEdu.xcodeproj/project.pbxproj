@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72812CAAF926CA16DC52E875 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1FAAF0BB76595E62C85DEA /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A879A0001BB954DC00C8EF80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8799FFF1BB954DC00C8EF80 /* main.m */; };
 		A879A0031BB954DC00C8EF80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A879A0021BB954DC00C8EF80 /* AppDelegate.m */; };
 		A879A0061BB954DC00C8EF80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A879A0051BB954DC00C8EF80 /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A4A33E01D30DF4162C8418E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A8799FFB1BB954DC00C8EF80 /* maodouEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maodouEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8799FFF1BB954DC00C8EF80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A879A0011BB954DC00C8EF80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		A879A01F1BB954DC00C8EF80 /* maodouEduUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = maodouEduUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A879A0231BB954DC00C8EF80 /* maodouEduUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = maodouEduUITests.m; sourceTree = "<group>"; };
 		A879A0251BB954DC00C8EF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B98AC3BB498633B1CC3982B0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BA1FAAF0BB76595E62C85DEA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72812CAAF926CA16DC52E875 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0C385C0FCA1F20E31138FB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA1FAAF0BB76595E62C85DEA /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A8799FF21BB954DC00C8EF80 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,8 @@
 				A879A0171BB954DC00C8EF80 /* maodouEduTests */,
 				A879A0221BB954DC00C8EF80 /* maodouEduUITests */,
 				A8799FFC1BB954DC00C8EF80 /* Products */,
+				F293F25B3284AE60DE05A6CA /* Pods */,
+				A0C385C0FCA1F20E31138FB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +155,15 @@
 			path = maodouEduUITests;
 			sourceTree = "<group>";
 		};
+		F293F25B3284AE60DE05A6CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B98AC3BB498633B1CC3982B0 /* Pods.debug.xcconfig */,
+				8A4A33E01D30DF4162C8418E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A879A0281BB954DC00C8EF80 /* Build configuration list for PBXNativeTarget "maodouEdu" */;
 			buildPhases = (
+				1677E2A009549417CE9B6687 /* Check Pods Manifest.lock */,
 				A8799FF71BB954DC00C8EF80 /* Sources */,
 				A8799FF81BB954DC00C8EF80 /* Frameworks */,
 				A8799FF91BB954DC00C8EF80 /* Resources */,
+				9DF684127F3F0EC5A37948F7 /* Embed Pods Frameworks */,
+				D80B40B7136A61835ABE3BF0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1677E2A009549417CE9B6687 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9DF684127F3F0EC5A37948F7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D80B40B7136A61835ABE3BF0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8799FF71BB954DC00C8EF80 /* Sources */ = {
@@ -409,6 +484,7 @@
 		};
 		A879A0291BB954DC00C8EF80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B98AC3BB498633B1CC3982B0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = maodouEdu/Info.plist;
@@ -420,6 +496,7 @@
 		};
 		A879A02A1BB954DC00C8EF80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A4A33E01D30DF4162C8418E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = maodouEdu/Info.plist;
@@ -496,6 +573,7 @@
 				A879A02A1BB954DC00C8EF80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A879A02B1BB954DC00C8EF80 /* Build configuration list for PBXNativeTarget "maodouEduTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +582,7 @@
 				A879A02D1BB954DC00C8EF80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A879A02E1BB954DC00C8EF80 /* Build configuration list for PBXNativeTarget "maodouEduUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +591,7 @@
 				A879A0301BB954DC00C8EF80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
