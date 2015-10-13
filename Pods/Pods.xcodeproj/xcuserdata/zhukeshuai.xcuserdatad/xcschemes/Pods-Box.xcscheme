@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8C01EDC90270C4AA706A53DD"
+               BlueprintIdentifier = "EEF6AD558139314614860CBC"
                BuildableName = "Box.framework"
                BlueprintName = "Pods-Box"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F69D71429B2B8318E2DF82F9"
+               BlueprintIdentifier = "D1393190FD33C3C4B43056AE"
                BuildableName = "MJRefresh.framework"
                BlueprintName = "Pods-MJRefresh"
                ReferencedContainer = "container:Pods.xcodeproj">
