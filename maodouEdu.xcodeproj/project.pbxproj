@@ -91,6 +91,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A859A6611BCF9D13002A3AF7 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				A859A6621BCF9D31002A3AF7 /* common */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		A859A6621BCF9D31002A3AF7 /* common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		A859A6641BCFA03C002A3AF7 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		A859A6651BCFA08F002A3AF7 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
 		A8799FF21BB954DC00C8EF80 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +145,9 @@
 		A8799FFD1BB954DC00C8EF80 /* maodouEdu */ = {
 			isa = PBXGroup;
 			children = (
+				A859A6651BCFA08F002A3AF7 /* Libraries */,
+				A859A6641BCFA03C002A3AF7 /* storyboard */,
+				A859A6611BCF9D13002A3AF7 /* Class */,
 				A879A0011BB954DC00C8EF80 /* AppDelegate.h */,
 				A879A0021BB954DC00C8EF80 /* AppDelegate.m */,
 				A879A0041BB954DC00C8EF80 /* ViewController.h */,
