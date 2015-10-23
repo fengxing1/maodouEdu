@@ -20,7 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - Box (1.2.2)
+  - GKFadeNavigationController (0.4.5)
   - GRMustache (7.3.2):
     - JRSwizzle (~> 1.0)
   - JRSwizzle (1.0)
@@ -28,12 +28,14 @@ PODS:
   - MJExtension (2.5.12)
   - MJRefresh (2.4.11)
   - Reachability (3.2)
-  - ReactiveCocoa (3.0.0):
-    - ReactiveCocoa/UI (= 3.0.0)
-    - Result (~> 0.4.1)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
   - RESideMenu (4.0.7)
-  - Result (0.4.4):
-    - Box (~> 1.2)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
@@ -43,6 +45,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - GKFadeNavigationController
   - GRMustache
   - MBProgressHUD
   - MBProgressHUD (~> 0.9.1)
@@ -58,19 +61,18 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
-  Box: a92e8aa4c099e6bc0733829665caf9e668ef53b8
+  GKFadeNavigationController: 1342e04fd4dcd8f25744a72b993b6011479679fc
   GRMustache: ebe6104fd30a6d22c1f36af131e19e2dbf7cd292
   JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJExtension: 5ab633484e431f777387c70b676c80f993361f1b
   MJRefresh: b327947f35ab3eb16ca42646b26f7347e6aa7186
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  ReactiveCocoa: 5c4710e2f00f69f39a7f135d1f3ab48f8dace034
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
-  Result: b44f6bc8762bbffaf2c5df58f2c7d12c3496ced8
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.39.0

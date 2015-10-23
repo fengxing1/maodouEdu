@@ -13,3 +13,4 @@ pod 'MBProgressHUD'
 pod 'Reachability'
 pod 'TTTAttributedLabel'
 pod 'GRMustache'
+pod "GKFadeNavigationController"
