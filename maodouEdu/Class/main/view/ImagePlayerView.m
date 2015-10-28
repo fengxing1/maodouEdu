@@ -8,6 +8,7 @@
 
 #import "ImagePlayerView.h"
 #import "UIColor+Hex.h"
+#import "MDYCommonUtils.h"
 #define kStartTag   1000
 #define kDefaultScrollInterval  2
 
